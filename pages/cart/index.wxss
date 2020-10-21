@@ -1,0 +1,134 @@
+page{
+padding-bottom: 90rpx;
+}
+.revice_address_rou .btn_address {
+  padding: 20rpx;
+}
+.revice_address_rou .btn_address button{
+  width: 60%;
+  font-weight: 200;
+}
+.user_info_row{
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+}
+.cart_title{
+  color: var(--themeColor);
+  padding: 20rpx;
+  font-size: 36rpx;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+}
+.cart_main{
+  display: flex;
+  padding: 10rpx;
+  height: 160rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.main_check{
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main_image{
+  flex: 2;
+  display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.main_image image{
+  width: 80%;
+}
+.main_goods{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main_goods .goods_name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 26rpx;
+  color: #868c8c;
+}
+.main_goods .goods_price_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goods_price_row .goods_price{
+  font-size: 32rpx;
+  color: var(--themeColor);
+  font-weight: 400;
+}
+.goods_price_row .cart_num_tool{
+  display: flex;
+}
+.goods_price_row .cart_num_tool .num_edit{
+  width: 40rpx;
+  height: 40rpx;
+  border: 1px solid #ccc;
+  line-height: 40rpx;
+  text-align: center;
+}
+.cart_num_tool .goods_num{
+  padding: 0 20rpx;
+}
+.bottom_tool{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1rpx solid #dedede;
+  height: 90rpx;
+  background-color: #fff;
+}
+.bottom_tool .check_all{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6rpx;
+}
+.bottom_tool .check_all .text_all{
+font-size: 22rpx;
+color: #333;
+}
+.bottom_tool .price_all_row{
+  flex: 4;
+  display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding-right: 10rpx;
+}
+.bottom_tool .price_all_row .top{
+  display: flex;
+}
+.bottom_tool .price_all_row .top .price{
+  color: var(--themeColor);
+  padding-left: 6rpx;
+  font-size: 32rpx;
+}
+.bottom_tool .price_all_row .bottom{
+  font-size: 24rpx;
+}
+.bottom_tool .price_buy{
+  flex: 2;
+  background-color: var(--themeColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+}
+.kongkong{
+  width: 100%;
+}
+

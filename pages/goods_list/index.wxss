@@ -1,0 +1,31 @@
+.good_item{
+  overflow: hidden;
+}
+.first_tap .good_item {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+}
+.first_tap .good_item .item_img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+}
+.first_tap .good_item .item_img image {
+  width: 70%;
+}
+.first_tap .good_item .item_content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.first_tap .good_item .item_content .content_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

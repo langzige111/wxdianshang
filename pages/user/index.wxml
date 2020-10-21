@@ -1,0 +1,71 @@
+<view class="user_info_wrap">
+  <view class="user_image_wrap">
+    <block wx:if="{{userInfo.nickName}}">
+      <image class="user_bg" mode="widthFix"
+        src="https://thirdwx.qlogo.cn/mmopen/vi_32/tIDw0pHBjvCuGGKu9jQe7xCfNqq644TxKzIENPKr0iaiaZejhbpKiaMBFbprhgNX0PicX7KHE0aUpffxT826IhJleA/132">
+      </image>
+      <view class="user_info">
+        <image class="user_icon" mode="widthFix"
+          src="https://thirdwx.qlogo.cn/mmopen/vi_32/tIDw0pHBjvCuGGKu9jQe7xCfNqq644TxKzIENPKr0iaiaZejhbpKiaMBFbprhgNX0PicX7KHE0aUpffxT826IhJleA/132">
+        </image>
+        <view class="user_message">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+    <block wx:else>
+      <navigator url="/pages/login/index" class="user_btn">登录</navigator>
+    </block>
+  </view>
+</view>
+<view class="user_content_wrap">
+  <view class="user_main">
+    <view class="user_his_row">
+      <navigator class="user_his">
+        <view class="his_num">0</view>
+        <view class="his_name">收藏的店铺</view>
+      </navigator>
+      <navigator class="user_his" url="/pages/collect/index">
+        <view class="his_num">{{collectNum}}</view>
+        <view class="his_name">收藏的商品</view>
+      </navigator>
+      <navigator class="user_his">
+        <view class="his_num">0</view>
+        <view class="his_name">关注的商品</view>
+      </navigator>
+      <navigator class="user_his">
+        <view class="his_num">0</view>
+        <view class="his_name">我的足迹</view>
+      </navigator>
+    </view>
+    <view class="dingdan">
+      <view class="dingdan_title">我的订单</view>
+      <view class="dingdan_content">
+        <navigator class="dingdan_content_row">
+          <view class="iconfont icon-ding_dan"></view>
+          <view>全部订单</view>
+        </navigator>
+        <navigator class="dingdan_content_row">
+          <view class="iconfont icon-fukuantongzhi"></view>
+          <view>待付款</view>
+        </navigator>
+        <navigator class="dingdan_content_row">
+          <view class="iconfont icon-receipt-address"></view>
+          <view>待收货</view>
+        </navigator>
+        <navigator class="dingdan_content_row">
+          <view class="iconfont icon-tuihuotuikuan_dianpu"></view>
+          <view>退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+    <view class="address_wrap">收获地址管理</view>
+    <view class="about_wrap">
+      <view class="about_kefu aaa">
+        <text>联系客服</text>
+        <text>400-618-400</text>
+      </view>
+      <navigator url="/pages/feedback/index" class="about_yijian aaa">意见反馈</navigator>
+      <view class="about_our aaa">关于我们</view>
+    </view>
+    <view class="recommend_wrap">把应用推荐给其他人</view>
+  </view>
+</view>
